@@ -18,11 +18,7 @@ const MainTodos = () => {
 
             <SaveTodos pushingTodo={setmyTodo} myTodo={myTodo}/>
             
-            <hr /><br />
-            
             <ListTodos allTodos={myTodo} pushingTodo={setmyTodo}/>
-            
-            <hr /><br />
             
             <FooterTodos />
         </div>

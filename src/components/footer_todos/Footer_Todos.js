@@ -4,10 +4,7 @@ const FooterTodos = () => {
 
     return (
         <section className="footer-section">
-            <div className="remaining-text">
-                3 items left
-            </div>
-            <div>
+            <div className="footer-links">
                 <a href="#">All</a>
                 <a href="#">Active</a>
                 <a href="#">Completed</a>

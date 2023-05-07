@@ -13,6 +13,10 @@ const SaveTodos = ({pushingTodo, myTodo}) => {
 
     const submitNewTodo = (e) => {  
         e.preventDefault();
+
+        if(newTodo === ""){
+            return;
+        }
         
         const savedTodo = {
             id: Math.floor(Math.random() * 1000),
@@ -28,7 +32,7 @@ const SaveTodos = ({pushingTodo, myTodo}) => {
     return (
         <section className='new-todo-section'>
             <form onSubmit={submitNewTodo}>
-                <span>
+                <span className="save-icon">
                 <FontAwesomeIcon icon={faFloppyDisk} />
                 </span>
                 <input value={newTodo} onChange={newTodoChange}/>
