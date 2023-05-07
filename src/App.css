@@ -1,4 +1,105 @@
-.App {
-  text-align: center;
+:root {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
 }
 
+.App {
+    width: 50vw;
+    height: fit-content;
+    margin: 10vh auto;
+    padding: 3vh 2vh;
+    background-color: #0C134F;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+h1 {
+    color: #5C469C;
+    font-size: 10vh;
+    margin: 3vh auto;
+}
+
+.new-todo-section input {
+    box-sizing: border-box;
+    width: 96%;
+    height: 6.5vh;
+    padding-left: 6vh;
+    border-radius: 15px;
+    font-size: 4vh;
+}
+
+.new-todo-section .save-icon {
+    position: absolute;
+    margin: 0.6vh 0 0.4vh 1vh;
+}
+
+.new-todo-section .save-icon svg {
+    color: #03C988;
+}
+
+
+ul {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    list-style-type: none;
+}
+
+.list-item {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 5%;
+    border-bottom: 2px solid white;
+}
+
+.delete-icon {
+    color: darkorange;
+}
+
+svg path {
+    pointer-events: none;
+}
+
+section div {
+    font-size: 5vh;
+    color: #D4ADFC;
+}
+
+svg {
+    font-size: 5vh;
+}
+
+.done-icon svg {
+    color: #03C988;
+}
+
+.list-item .done-icon {
+    flex: 1;
+}
+.list-item .todo-name{
+    flex: 5;
+}
+.list-item .delete-icon {
+    flex: 1;    
+}
+
+.todo-name.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.footer-links {
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links a {
+    color: #5C469C;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
